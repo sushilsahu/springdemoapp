@@ -23,4 +23,9 @@ public class EmployeeController {
         return ResponseEntity.ok(employee);
     }
 
+    @GetMapping("/hello")
+    public String sayHello() {
+        return "Hello, World!";
+    }
+
 }
